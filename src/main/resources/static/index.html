@@ -1,21 +1,109 @@
 <!DOCTYPE html>
 <!-- Primera página web del curso...-->
-<html>
+<html lang="es">
     <head>
         <title>Tienda en línea</title>
         <meta charset="UTF-8">
+        <meta name="description"content="Página principal de la tienda TechShop">
+        <meta name="keywords"content="TechShop, html5, css3">
+        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <a href="ejemplo9.html">Back</a>
-        <a href="index.html">Home</a>
-        <a href="ejemplo2.html">Next</a>
-        <div>
-            <h1 style="text-align: center">Home</h1>
-            <p>Esta es la primera página del curso WEB y Patrones...</p>
-        </div>
-    <p style="text-align: left">Lorem ipsum dolor sit amet consectetur adipiscing elit interdum, pellentesque tellus tristique imperdiet dis mi bibendum diam placerat, litora metus laoreet nec rhoncus leo sem. Mauris convallis commodo nisi enim maecenas laoreet potenti litora himenaeos elementum blandit rutrum viverra, odio justo suscipit egestas tristique pharetra senectus dictum taciti proin cursus natoque. Facilisis purus dapibus curae urna torquent phasellus mus nulla convallis eu, mattis proin praesent orci volutpat et velit ante potenti enim, aliquet quisque nullam fermentum curabitur ut himenaeos sociis iaculis. Dapibus fusce blandit iaculis velit posuere sapien morbi penatibus scelerisque mattis malesuada donec viverra at, natoque ullamcorper felis nulla leo ultricies mollis etiam elementum suspendisse aptent erat odio.</p>
-    <p style="text-align: right">Faucibus viverra nec cum aptent id felis magnis inceptos ultricies tempus, ac orci aliquet convallis porta ornare libero sem luctus, justo aliquam commodo pretium semper netus imperdiet ultrices sociis. Litora rhoncus aenean dignissim gravida cubilia faucibus placerat himenaeos etiam, nisi in platea per parturient vitae metus mollis lacus non, ac id hendrerit bibendum dis hac diam justo. Vitae porta sed himenaeos gravida ligula tristique facilisis lacinia, nostra cras dis ac placerat tincidunt turpis eros, nulla fringilla dui auctor penatibus aliquet sollicitudin.</p>
-    <p style="text-align: center">Massa nisi scelerisque habitasse porttitor vulputate volutpat nulla quam, curabitur mattis duis ligula primis mollis posuere sollicitudin mus, ad blandit facilisi nec est nam non. Potenti lacinia pellentesque fringilla est semper nunc luctus et cum imperdiet nisi nec, neque aliquam commodo purus posuere fermentum vehicula dui odio cubilia. Potenti nascetur nullam rutrum curabitur natoque senectus, vivamus facilisis porta id metus, malesuada phasellus dignissim fusce est.</p>
+        <header id="encabezado">
+            <h1>TechShop</h1>
+        </header>
+        <nav id="menu">
+            <a href="ejemplo9.html">Back</a>
+            <a href="index.html">Home</a>
+            <a href="ejemplo3.html">Next</a>
+        </nav>
+        <aside id="barralateral">
+            <h2>Últimas noticias</h2>
+            <p> Massa nisi scelerisque habitasse porttitor vulputate volutpat nulla quam, curabitur mattis duis ligula primis mollis posuere sollicitudin mus, ad blandit facilisi nec est nam non. Potenti lacinia pellentesque fringilla est semper nunc luctus et cum imperdiet nisi nec, neque aliquam commodo purus posuere fermentum vehicula dui odio cubilia. Potenti nascetur nullam rutrum curabitur natoque senectus, vivamus facilisis porta id metus, malesuada phasellus dignissim fusce est.</p>
+        </aside>
+        <section id="contenido">
 
+            <h1>Nuestros productos</h1>
+            <article>
+                <header>Portatil XDR5000</header>
+                <p> Massa nisi scelerisque habitasse porttitor vulputate volutpat nulla quam, curabitur mattis duis ligula primis mollis posuere sollicitudin mus, ad blandit facilisi nec est nam non. Potenti lacinia pellentesque fringilla est semper nunc luctus et cum imperdiet nisi nec, neque aliquam commodo purus posuere fermentum vehicula dui odio cubilia. Potenti nascetur nullam rutrum curabitur natoque senectus, vivamus facilisis porta id metus, malesuada phasellus dignissim fusce est.</p>
+                <figure>
+                    <img src="images/articulo 1.jpg" alt="Imagen de una portátil" width="220"/>
+                    <figcaption>
+                        <p>Lo mas vendido</p>
+                    </figcaption>
+                </figure>
+
+                <footer>Agregar al carrito</footer>
+            </article>
+            
+            <article>
+                <header>Alienware</header>
+                <p style="text-align: left">Lorem ipsum dolor sit amet consectetur adipiscing elit interdum, pellentesque tellus tristique imperdiet dis mi bibendum diam placerat, litora metus laoreet nec rhoncus leo sem. Mauris convallis commodo nisi enim maecenas laoreet potenti litora himenaeos elementum blandit rutrum viverra, odio justo suscipit egestas tristique pharetra senectus dictum taciti proin cursus natoque. Facilisis purus dapibus curae urna torquent phasellus mus nulla convallis eu, mattis proin praesent orci volutpat et velit ante potenti enim, aliquet quisque nullam fermentum curabitur ut himenaeos sociis iaculis. Dapibus fusce blandit iaculis velit posuere sapien morbi penatibus scelerisque mattis malesuada donec viverra at, natoque ullamcorper felis nulla leo ultricies mollis etiam elementum suspendisse aptent erat odio.</p>
+                <figure>
+                    <img src="images/articulo 2.png" alt="Imagen de una portátil alienware" width="220"/>
+                    <figcaption>
+                        <p>Diseñada para gamers</p>
+                    </figcaption>
+                </figure>
+
+                <footer>Agregar al carrito</footer>
+            </article>
+            
+            <article>
+                <header>Impresora 3D, portable</header>
+                <p>Faucibus viverra nec cum aptent id felis magnis inceptos ultricies tempus, ac orci aliquet convallis porta ornare libero sem luctus, justo aliquam commodo pretium semper netus imperdiet ultrices sociis. Litora rhoncus aenean dignissim gravida cubilia faucibus placerat himenaeos etiam, nisi in platea per parturient vitae metus mollis lacus non, ac id hendrerit bibendum dis hac diam justo. Vitae porta sed himenaeos gravida ligula tristique facilisis lacinia, nostra cras dis ac placerat tincidunt turpis eros, nulla fringilla dui auctor penatibus aliquet sollicitudin.</p>
+                <figure>
+                    <img src="images/articulo3.jpg" alt="Imgen de una impresora 3D" width="220"/>
+                    <figcaption>
+                        <p>Lo más económico del mercado</p>
+                    </figcaption>
+                </figure>
+
+                <footer>Agregar al carrito</footer>
+            </article>
+            <article>
+                <header><h2>Resumen de líneas</h2></header>
+               <table border="0">
+                    <thead>
+                        <tr id="encabezadoTabla">
+                            <th>Código</th>
+                            <th>Detalle</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablaDetalle">
+                        <tr>
+                            <td>1</td>
+                            <td>Aliquam turpis elementum taciti phasellus</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>mattis tellus metus aenean, nec netus rutrum</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>ridiculus nullam quisque ad lobortis purus, </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>litora ante tristique aptent blandit velit augue.</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Egestas a aliquet rhoncus justo lobortis hac </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>eget arcu parturient aliquam hendrerit ridiculus.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </article>
+
+           </section>
+        <footer id="piepagina">
+            Derechos Reservados &COPY; 2022, Telefono <address style="display: inline">8899-7766</address>
+        </footer>
     </body>
 </html>
