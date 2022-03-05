@@ -7,7 +7,8 @@
        
     </head>
     <body>
-        <h1>Datos de Clientes</h1>
+         <header th:replace="plantilla/plantilla :: header" />
+        <h2>Datos de Clientes</h2>
         <a th:href="@{/}">Regresar</a>
         <form method="post"
               th:action="@{/guardarCliente}"
@@ -27,5 +28,6 @@
             <br/>
             <input type="submit" name="guardar" value="Guardar"/>
         </form>
+         <footer th:replace="plantilla/plantilla :: footer" />
     </body>
 </html>
