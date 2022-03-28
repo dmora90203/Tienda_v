@@ -1,30 +1,31 @@
-<!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org"
-    xmls="http://w3.org/1999/xhtml">
+<!DOCTYPE HTML>
+<HTML xmlns:th="http://www.thymeleaf.org"
+      xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <title>TechShop</title>
-        <meta charset="UTF-8">
-         <link href="css/menu.css" rel="stylesheet" type="text/css"/>
+        <meta charset="UTF-8"/>
+        <link href="/css/menu.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-         <header th:replace="plantilla/plantilla :: header" />
-         <div class="contenido">
-        <h2>Datos de Categorias</h2>
-        <a th:href="@{/categoria/listado}">Regresar</a>
-        <form method="post"
-              th:action="@{/categoria/guardar}"
-              th:object="${categoria}">
-            <input type="hidden" name="idCategoria" th:field="*{idCategoria}"/>
-            <label for="descripcion">Descripcion:</label>
-            <input type="text" name="descripcion" th:field="*{descripcion}"/>
-            <br/>
-                <label for="activo">Activo:</label>
-            <input type="checkbox" name="activo" th:checked="${categoria.activo}" disabled="true"/>
-            <br/>
-            <br/>
-            <input type="submit" name="guardar" value="Guardar"/>
-        </form>
-         </div>
-         <footer th:replace="plantilla/plantilla :: footer" />
+        <header th:replace="plantilla/plantilla :: header" />
+        <div class="contenido">
+            <h2 th:text="#{categoria.datos}">Datos de Categoria</h2>
+            <a th:href="@{/categoria/listado}" th:text="#{acccion.regresar}">Regresar</a>
+            <form method="post"
+                  th:action="@{/categoria/guardar}"
+                  th:object="${categoria}">
+                <input type="hidden" name="idCategoria" th:field="*{idCategoria}"/>
+                <label for="descripcion" th:text="#{categoria.descripcion}">Descripcion: </label>
+                <input type="text" name="descripcion" th:field="*{descripcion}"/>
+                <br/>
+                <label for="activo" th:text="#{categoria.activo}">Activo: </label>
+                <input type="checkbox" name="activo" th:checked="${cetegorio.activo}" disabled="true"/>
+                <br/>
+                <br/>
+                <input type="submit" name="guardar" value="Guardar" th:text="#{accion.guardar}"/>
+            </form>
+        </div>
+        <footer th:replace="plantilla/plantilla :: footer" />
     </body>
-</html>
+</HTML>
+
